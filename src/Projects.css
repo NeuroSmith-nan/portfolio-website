@@ -1,0 +1,40 @@
+/* 1. สไตล์ของ "กล่องแม่" (Container) */
+.projects-container {
+  display: flex;         /* 1. สั่งให้ลูกๆ เรียงตัวแนวนอน */
+  overflow-x: auto;      /* 2. ถ้าล้นแนวนอน ให้เลื่อนได้ (auto จะแสดง scrollbar เมื่อจำเป็น) */
+  padding: 16px 0;       /* (เสริม) เพิ่มช่องว่างนิดหน่อย */
+  gap: 16px;             /* (เสริม) สร้างช่องว่างระหว่าง Item */
+}
+
+/* 2. สไตล์ของ "กล่องลูก" (Item) */
+.projects-item {
+  flex-shrink: 0;        /* 3. (สำคัญมาก) ห้ามหดตัว! ให้คงขนาดจริงไว้ */
+  width: 100%;          /* 4. กำหนดขนาดความกว้างที่แน่นอนให้แต่ละ Item */
+  
+  /* --- ที่เหลือเป็นแค่สไตล์เพื่อความสวยงาม --- */
+  background-color: #a09f9f;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; /* ซ่อน scrollbar สำหรับ Chrome, Safari, Edge */
+}
+
+.projects-container {
+  -ms-overflow-style: none;  /* ซ่อน scrollbar สำหรับ IE/Edge */
+  scrollbar-width: none;     /* ซ่อน scrollbar สำหรับ Firefox */
+}
+
+/* ในกล่องแม่ (Container) */
+.projects-container {
+  /* ...ของเดิม... */
+  scroll-snap-type: x mandatory; /* 5. เปิดใช้งาน snap แนวนอน (mandatory = บังคับ) */
+}
+
+/* ในกล่องลูก (Item) */
+.projects-item {
+  /* ...ของเดิม... */
+  scroll-snap-align: start;      /* 6. ให้ snap โดยจัด Item ไว้ที่จุดเริ่มต้น (ซ้าย) */
+}

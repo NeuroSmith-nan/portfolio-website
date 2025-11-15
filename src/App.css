@@ -1,0 +1,21 @@
+/* ใส่ใน styles.css หรือ App.css */
+
+/* สไตล์ของ "กล่องแม่" (จาก App.jsx) */
+.experience-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 16px 0;
+  gap: 16px; /* สร้างช่องว่างระหว่าง Item */
+}
+
+/* สไตล์ของ "กล่องลูก" (จาก Experience.jsx) */
+.experience-item {
+  flex-shrink: 0;        /* ห้ามหดตัว! */
+  width: 300px;          /* กำหนดขนาดที่แน่นอน */
+  
+  /* สไตล์ตกแต่ง */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

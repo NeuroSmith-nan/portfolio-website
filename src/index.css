@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Custom styles */
+@layer base{
+    li > a{
+        padding-top: 4px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    li > a:hover{
+        padding: 15px;
+        color: #D9531E;
+
+        
+    }
+
+    div.cont-container h2{
+        @apply flex flex-row gap-2
+    }
+
+    input{
+        @apply p-5 border rounded-3xl mr-2 bg-amber-100
+    }
+ 
+}
+
+@layer components{
+    .light{
+        background-color: #F4F4F4;
+        color: #2A2A2A;
+    }
+
+
+    .dark{
+        background-color: #2A2A2A;
+        color: #EAEAEA;
+    }
+
+    
+}
