@@ -42,7 +42,7 @@ export default function About() {
                     
                     {/* 10. ปรับขนาด font ให้เป็น mobile-first (text-base คือ 16px) และใหญ่ขึ้นบนจอ md/lg */}
                     {/* ใช้ <br/><br/> หรือ <p> หลายๆ อัน เพื่อให้ย่อหน้าทำงานถูกต้อง */}
-                    <p className='text-base md:text-lg lg:text-xl '>
+                    <p className='text-base md:text-lg lg:text-xl mb-2'>
                         Hi, I’m Hanant 👋
                         <br/><br/>
                         Everything started from a small curiosity I had as a kid — questions like “How do these technologies work?” and “Who creates them?”
@@ -52,6 +52,11 @@ export default function About() {
                         <br/><br/>
                         I’m truly grateful to be walking this path in technology — one that challenges me, inspires me, and helps me grow every day. 🌱
                     </p>
+                    <div id="About" className="flex w-full py-2 md:py-4 items-center justify-center">
+                        <a href="/resume_Hanant.pdf" download className="btn text-base md:text-lg lg:text-xl border rounded-2xl hover:text-orange-700 p-3 md:p-5 lg:p-6 ">
+                            Download Resume<span className=' text-red-600'>!</span>
+                        </a>    
+                    </div>           
                 </div>
             </div>
 
