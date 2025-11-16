@@ -7,9 +7,9 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Contackt from './Contact'
 import Footer from './Footer'
+import { Icon } from '@iconify/react';
 
-
-import Pf2 from './assets/Profile2.jpg'
+import Pf2 from './assets/react.svg'
 
 
 function App() {
@@ -27,32 +27,49 @@ function App() {
     }
   },[theme])
 
-  // 2. สร้าง array ข้อมูล
-  const experiencesData = [
+  // Experience ----------------------------------------------------------------------------
+  const experienceData = [
     {
       id: 1,
-      img: Pf2,
-      title: 'Senior Developer @ Google',
+      img: '/public/Dental.png',
+      title: `Children's dental segmentation`,
+      tools:['devicon:python','material-icon-theme:pytorch','devicon:anaconda'],
       description: 'พัฒนาระบบ Search Algorithm และทำงานกับทีม AI'
     },
     {
       id: 2,
-      img: Pf2,
-      title: 'Mid-Level Developer @ Facebook',
-      description: 'ดูแลส่วนของ News Feed และพัฒนาระบบ Real-time'
+      img: '/public/Before.jpg',
+      title: '**************',
+      tools:['devicon:python','simple-icons:yolo','devicon:opencv'],
+      description: 'พัฒนาระบบ Search Algorithm และทำงานกับทีม AI'
     },
     {
       id: 3,
-      img: Pf2,
-      title: 'Junior Developer @ Startup',
-      description: 'เรียนรู้การทำงานแบบ Agile และสร้างฟีเจอร์ใหม่ๆ'
+      img: '/public/Crime.jpg',
+      title: 'Analysis of USA crime',
+      tools:['devicon:python','devicon:numpy','devicon:pandas'],
+      description: 'พัฒนาระบบ Search Algorithm และทำงานกับทีม AI'
+    },
+    
+  ];
+
+  // Project ----------------------------------------------------------------------------
+  const projectData = [
+    {
+      id:101,
+      img:Pf2,
+      pjname:'Bitcoin predicetion',
+      tools:'devicon:python',
+      description:' เทนร AI'
     },
     {
-      id: 4,
-      img: Pf2,
-      title: 'Project Freelance',
-      description: 'รับงานทำเว็บแอปพลิเคชันด้วย React และ Node.js'
-    }
+      id:102,
+      img:Pf2,
+      pjname:'Bitcoin predicetion',
+      tools:'devicon:python',
+      description:' เทนร AI2'
+    },
+
   ];
 
   return (
@@ -61,9 +78,9 @@ function App() {
         <Navigator theme={theme} setTheme={setTheme}/>
         <Header/>
         <About/>
-        <Experience/>   
+        <Experience experiencesData={experienceData}/>   
         <Skills/>
-        <Projects/>
+        <Projects projectData={projectData} />
         <Contackt/>
         <Footer/>
         

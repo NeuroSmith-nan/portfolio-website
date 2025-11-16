@@ -49,7 +49,7 @@ function Header({ theme }) {
               <Typewriter 
                 options={{
                   strings: ["Hi, the name's Hanant 👋"
-                            ,"I like Matcha 🍵"
+                            ,"I like Cocoa and Matcha 🍵"
                             , "I like to code.py 🐍"
                             , "Cat Servant 🐈‍⬛"
                             , "CTO of Zibal 🚀"
