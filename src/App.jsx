@@ -53,6 +53,70 @@ function App() {
     
   ];
 
+  // Skill ----------------------------------------------------------------------------
+  const skillsData = [
+    {
+      id:1,
+      skill:'vscode-icons:file-type-html',
+      title:'Intermediate'
+    },
+    {
+      id:2,
+      skill:'devicon:css3',
+      title:'Intermediate'
+    },
+    {
+      id:3,
+      skill:'vscode-icons:file-type-js-official',
+      title:'Intermediate'
+    },
+    {
+      id:4,
+      skill:'logos:react',
+      title:'Intermediate'
+    },
+    {
+      id:5,
+      skill:'skill-icons:tailwindcss-light',
+      title:'Intermediate'
+    },
+    {
+      id:6,
+      skill:'vscode-icons:file-type-python',
+      title:'Intermediate'
+    },
+    {
+      id:7,
+      skill:'skill-icons:flask-light',
+      title:'Intermediate'
+    },
+    {
+      id:8,
+      skill:'devicon:numpy',
+      title:'Intermediate'
+    },
+    {
+      id:9,
+      skill:'devicon:pandas',
+      title:'Intermediate'
+    },
+    {
+      id:10,
+      skill:'devicon:matplotlib',
+      title:'Intermediate'
+    },
+    {
+      id:11,
+      skill:'devicon:scikitlearn',
+      title:'Intermediate'
+    },
+    {
+      id:12,
+      skill:'material-icon-theme:django',
+      title:'Intermediate'
+    },
+  ];
+
   // Project ----------------------------------------------------------------------------
   const projectData = [
     {
@@ -72,6 +136,8 @@ function App() {
 
   ];
 
+  
+
   return (
     <div className={theme}>
       <div className=' font-mono scroll-auto'>
@@ -79,7 +145,7 @@ function App() {
         <Header/>
         <About/>
         <Experience experiencesData={experienceData}/>   
-        <Skills/>
+        <Skills skillsData={skillsData}/>
         <Projects projectData={projectData} />
         <Contackt/>
         <Footer/>
