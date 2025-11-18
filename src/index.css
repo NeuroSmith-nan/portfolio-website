@@ -19,9 +19,7 @@
         @apply flex flex-row gap-2
     }
 
-    input{
-        @apply p-5 border rounded-3xl mr-2 bg-amber-100
-    }
+    
  
 }
 

@@ -10,7 +10,7 @@ export default function Skills({skillsData}){
             { skillsData.map( sk =>(
                 <div className=' flex flex-col justify-center items-center p-5'>
                     <span className=' mb-3'><Icon icon={sk.skill} width={60}/></span>
-                    <p className=' text-xs md:text-lg'>({sk.title})</p>
+                     <p className=' text-xs md:text-lg'>({sk.title})</p>
                 </div>
             ))}
             </div>
