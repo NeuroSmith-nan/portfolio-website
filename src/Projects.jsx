@@ -30,6 +30,7 @@ export default function Projects({projectData}){
                             </div>
                         </div>
                         <p className=' flex justify-center text-sm md:text-xl mt-5'>{item.description}</p>
+                        <h2 className=' flex justify-center text-xl text-amber-600'>&lt; {item.id} &gt;</h2>
                     </div>
                 ))}
             </div>

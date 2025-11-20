@@ -119,14 +119,14 @@ function App() {
   // Project ----------------------------------------------------------------------------
   const projectData = [
     {
-      id:101,
+      id:1,
       img:'/public/Porsche-911.jpg',
       pjname:'Bitcoin predicetion',
       tools:['devicon:python','devicon:numpy','devicon:pandas'],
       description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, expedita voluptates alias, incidunt perferendis eos facilis ducimus ea animi explicabo cupiditate voluptatum fuga distinctio repudiandae velit voluptas dolor vero! Vitae similique nostrum voluptatum commodi quidem! Quae, fugit? Repudiandae, blanditiis ab!'
     },
     {
-      id:102,
+      id:2,
       img:'/public/unsplash.jpg',
       pjname:'Bitcoin predicetion',
       tools:['devicon:python','devicon:numpy','devicon:pandas'],
