@@ -2,16 +2,16 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Icon } from '@iconify/react';
 
-export default function Contackt() {
+export default function Contact() {
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault(); // ป้องกันหน้าเว็บรีเฟรช
 
         // ⚠️ เปลี่ยนค่าตรงนี้ให้เป็นค่าของคุณจาก EmailJS
-        const SERVICE_ID = 'YOUR_SERVICE_ID';
-        const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-        const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+        const SERVICE_ID = 'service_oo02rds';
+        const TEMPLATE_ID = 'template_pj69cmx';
+        const PUBLIC_KEY = 'jpSXnb0W2QSnn4TiB';
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
             publicKey: PUBLIC_KEY,

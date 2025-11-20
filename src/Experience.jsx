@@ -31,13 +31,13 @@ export default function Experience({experiencesData}){
                         <h1 className='text-2xl font-semibold mb-3 text-white'>{exp.title}</h1>
                         <div className='flex gap-3 items-center mb-4 '>
                         {exp.tools.map(toolName => (
-                            <ul key={toolName} >
+                            <ul className=' text-white' key={toolName} >
                                 <li><Icon icon={toolName} width={25}/></li>
                             </ul>
                         ))}
                         </div>
                         {/* จุดที่แก้ไข: กำหนด h-24 และ overflow-y-auto ให้ Paragraph */}
-                        <p className="text-gray-600 dark:text-gray-300 text-sm h-24 overflow-y-auto">
+                        <p className=" text-white text-sm h-24 overflow-y-auto">
                             {exp.description}
                         </p>
                     </div>

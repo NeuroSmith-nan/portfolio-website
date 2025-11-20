@@ -7,7 +7,6 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Contackt from './Contact'
 import Footer from './Footer'
-import { Icon } from '@iconify/react';
 
 import Pf2 from './assets/react.svg'
 
@@ -33,14 +32,14 @@ function App() {
       id: 1,
       img: '/public/Dental.png',
       title: `Children's dental segmentation`,
-      tools:['devicon:python','material-icon-theme:pytorch','devicon:anaconda'],
+      tools:['devicon:python','material-icon-theme:pytorch','devicon:anaconda','simple-icons:yolo'],
       description: 'พัฒนาระบบ Search Algorithm และทำงานกับทีม AI'
     },
     {
       id: 2,
       img: '/public/Before.jpg',
       title: '**************',
-      tools:['devicon:python','simple-icons:yolo','devicon:opencv'],
+      tools:['devicon:python','devicon:opencv','simple-icons:yolo'],
       description: 'พัฒนาระบบ Search Algorithm และทำงานกับทีม AI'
     },
     {
@@ -121,18 +120,19 @@ function App() {
   const projectData = [
     {
       id:101,
-      img:Pf2,
+      img:'/public/Porsche-911.jpg',
       pjname:'Bitcoin predicetion',
-      tools:'devicon:python',
-      description:' เทนร AI'
+      tools:['devicon:python','devicon:numpy','devicon:pandas'],
+      description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, expedita voluptates alias, incidunt perferendis eos facilis ducimus ea animi explicabo cupiditate voluptatum fuga distinctio repudiandae velit voluptas dolor vero! Vitae similique nostrum voluptatum commodi quidem! Quae, fugit? Repudiandae, blanditiis ab!'
     },
     {
       id:102,
-      img:Pf2,
+      img:'/public/unsplash.jpg',
       pjname:'Bitcoin predicetion',
-      tools:'devicon:python',
+      tools:['devicon:python','devicon:numpy','devicon:pandas'],
       description:' เทนร AI2'
     },
+    
 
   ];
 
