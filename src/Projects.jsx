@@ -18,9 +18,9 @@ export default function Projects({projectData}){
                         " key={item.id}>
                         <div className=' grid grid-cols-1 gap-3 md:grid-cols-2 pl-10 pr-10  md:pl-20 md:pr-20'>
                             <img className=' w-80 h-40 md:w-100 md:h-50 lg:w-140 lg:h-70 rounded-2xl mx-auto' src={item.img} alt={item.pjname} />
-                            <div className=' flex flex-col gap-6 '>
-                                <h2 className=' flex justify-center items-center text-sm md:text-xl lg:text-2xl'>{item.pjname}</h2>
-                                <div className=' grid grid-cols-3 md:grid-cols-5 gap-5 justify-center items-center'>
+                            <div className=' flex flex-col gap-6 justify-center items-center '>
+                                <h2 className=' flex text-sm md:text-xl lg:text-2xl'>{item.pjname}</h2>
+                                <div className=' grid grid-cols-3 md:grid-cols-5 gap-5'>
                                 { item.tools.map( toolName =>(
                                     <ul key={toolName}>
                                         <li className=' flex justify-center '><Icon icon={toolName} width="35" /></li>
