@@ -21,7 +21,7 @@ export default function Navigator({theme,setTheme}){
                         <li><a className=" p-0" href="https://www.threads.com/@hanant.16" target="blac_"><Icon icon="ph:threads-logo-fill" width="30"  /></a></li>
                         <li><a className=" p-0" href="" target="blac_"><Icon icon="pajamas:linkedin" width="30" /></a></li>
                         <li><a className=" p-0" href="https://github.com/NeuroSmith-nan?tab=repositories" target="blac_"><Icon icon="ri:github-fill" width="30" /></a></li>
-                        <li><a className=" p-0" href="" target="blac_"><Icon icon="fa7-brands:kaggle" width="17" /></a></li>
+                        <li><a className=" p-0" href="" target="blac_"><Icon icon="fa7-brands:kaggle" width="30" /></a></li>
                     </ul>
                 </div>
 

@@ -16,7 +16,6 @@ function Header({ theme }) {
         p-4       /* 2. เพิ่ม padding รอบนอก กันการ์ดชนขอบจอมือถือ */
       `}
     >
-      {/* --- 3. ส่ง 'theme' ต่อลงไป --- */}
       <AnimatedCircles theme={theme} />
 
       {/* การ์ดข้อความ */}
@@ -45,8 +44,8 @@ function Header({ theme }) {
             <h2 className=' mb-5 text-lg md:text-xl'>CS student</h2>
             
             {/* 6. ปรับขนาด Font ให้ Responsive และเพิ่ม min-h กัน Layout กระตุก */}
-            <div className=' text-2xl md:text-3xl font-medium min-h-[50px] sm:min-h-[60px] md:min-h-0'>
-              <Typewriter 
+            <div className=' text-base md:text-2xl lg:text-3xl font-medium min-h-[50px] sm:min-h-[60px] md:min-h-0'>
+              <Typewriter
                 options={{
                   strings: ["Hi, the name's Hanant 👋"
                             ,"I like Cocoa and Matcha 🍵"
@@ -64,8 +63,8 @@ function Header({ theme }) {
             </div>
 
             {/* 7. เพิ่ม flex-wrap ให้เมนู (เผื่อขึ้นบรรทัดใหม่บนจอมือถือ) */}
-            <ul className=' flex flex-2 flex-wrap gap-x-4 gap-y-2 mt-5 justify-center'>
-                <li><a href="#About">About</a></li> {/* 8. แก้คำผิด "Aboute" */}
+            <ul className=' grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 md:gap-y-2 mt-5 justify-center'>
+                <li><a href="#About">About</a></li> 
                 <li><a href="#Experience">Experience</a></li>
                 <li><a href="#Skill">Skills</a></li>
                 <li><a href="#Projects">Project</a></li>

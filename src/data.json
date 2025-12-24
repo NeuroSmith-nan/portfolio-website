@@ -1,0 +1,104 @@
+{
+  "experienceData": [
+    {
+      "id": 1,
+      "img": "/public/Dental.png",
+      "title": "Children's dental segmentation",
+      "tools": ["devicon:python", "material-icon-theme:pytorch", "devicon:anaconda", "simple-icons:yolo"],
+      "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
+    },
+    {
+      "id": 2,
+      "img": "/public/Before.jpg",
+      "title": "**************",
+      "tools": ["devicon:python", "devicon:opencv", "simple-icons:yolo"],
+      "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
+    },
+    {
+      "id": 3,
+      "img": "/public/Crime.jpg",
+      "title": "Analysis of USA crime",
+      "tools": ["devicon:python", "devicon:numpy", "devicon:pandas"],
+      "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
+    }
+  ],
+
+  "skillsData": [
+    {
+      "id": 1,
+      "skill": "vscode-icons:file-type-html",
+      "title": "Intermediate"
+    },
+    {
+      "id": 2,
+      "skill": "devicon:css3",
+      "title": "Intermediate"
+    },
+    {
+      "id": 3,
+      "skill": "vscode-icons:file-type-js-official",
+      "title": "Intermediate"
+    },
+    {
+      "id": 4,
+      "skill": "logos:react",
+      "title": "Intermediate"
+    },
+    {
+      "id": 5,
+      "skill": "skill-icons:tailwindcss-light",
+      "title": "Intermediate"
+    },
+    {
+      "id": 6,
+      "skill": "vscode-icons:file-type-python",
+      "title": "Intermediate"
+    },
+    {
+      "id": 7,
+      "skill": "skill-icons:flask-light",
+      "title": "Intermediate"
+    },
+    {
+      "id": 8,
+      "skill": "devicon:numpy",
+      "title": "Intermediate"
+    },
+    {
+      "id": 9,
+      "skill": "devicon:pandas",
+      "title": "Intermediate"
+    },
+    {
+      "id": 10,
+      "skill": "devicon:matplotlib",
+      "title": "Intermediate"
+    },
+    {
+      "id": 11,
+      "skill": "devicon:scikitlearn",
+      "title": "Intermediate"
+    },
+    {
+      "id":12,
+      "skill":"material-icon-theme:django",
+      "title":"Intermediate"
+    }
+  ],
+  "projectData": [
+    {
+      "id":1,
+      "img":"/public/Porsche-911.jpg",
+      "pjname":"Bitcoin predicetion",
+      "tools":["devicon:python","devicon:numpy","devicon:pandas"],
+      "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, expedita voluptates alias, incidunt perferendis eos facilis ducimus ea animi explicabo cupiditate voluptatum fuga distinctio repudiandae velit voluptas dolor vero! Vitae similique nostrum voluptatum commodi quidem! Quae, fugit? Repudiandae, blanditiis ab!"        
+    },
+    {
+      "id":2,
+      "img":"/public/unsplash.jpg",
+      "pjname":"Bitcoin predicetion",
+      "tools":["devicon:python","devicon:numpy","devicon:pandas"],
+      "description":" เทนร AI2"     
+    }
+  ]
+}

@@ -27,12 +27,14 @@
     .light{
         background-color: #F4F4F4;
         color: #2A2A2A;
+        transition: all 0.6s ease;
     }
 
 
     .dark{
         background-color: #2A2A2A;
         color: #EAEAEA;
+        transition: all 0.6s ease;
     }
 
 

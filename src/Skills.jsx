@@ -1,19 +1,43 @@
 import { Icon } from '@iconify/react';
 
-export default function Skills({skillsData}){
-    return(
-        <div className='skill-container w-full h-auto flex flex-col p-6 md:p-10 lg:py-16' >
-            <div id="Skill" className=" flex w-full py-10 md:py-16 items-center justify-center">
-                <h1 className=" text-2xl md:text-3xl font-semibold tracking-widest">S K I L L S</h1>
+export default function Skills({ skillsData }) {
+  return (
+    <div className='skill-container w-full min-h-screen flex flex-col items-center py-10 px-4 md:px-10 lg:py-16'>
+      
+      {/* Header */}
+      <div id="Skill" className="w-full py-8 md:py-12 text-center">
+        <h1 className="text-2xl md:text-3xl font-semibold tracking-[0.2em] uppercase ">
+          S K I L L S
+        </h1>
+      </div>
+
+      {/* Grid Container */}
+      {/* ใช้ max-w-5xl เพื่อคุมไม่ให้กว้างเกินไปในจอคอม */}
+      <div className="w-full max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 justify-items-center">
+        {skillsData.map((sk, index) => (
+          <div 
+            key={index} // อย่าลืมใส่ key
+            className='group flex flex-col justify-center items-center p-2 transition-transform duration-300 hover:scale-110'
+          >
+            {/* Icon Section */}
+            <div className='mb-3'>
+               {/* กำหนดขนาดที่นี่:
+                 - w-10 h-10 (40px) สำหรับมือถือ (ไม่เล็กไม่ใหญ่ไป)
+                 - md:w-16 md:h-16 (64px) สำหรับ iPad/PC 
+               */}
+               <Icon 
+                 icon={sk.skill} 
+                 className="w-10 h-10 md:w-16 md:h-16  " 
+               />
             </div>
-            <div className=" grid grid-cols-2 md:grid-cols-3 gap-5 pr-35 pl-35">
-            { skillsData.map( sk =>(
-                <div className=' flex flex-col justify-center items-center p-5'>
-                    <span className=' mb-3'><Icon icon={sk.skill} width={60}/></span>
-                     <p className=' text-xs md:text-lg'>({sk.title})</p>
-                </div>
-            ))}
-            </div>
-        </div>
-    )
+            
+            {/* Text Section */}
+            <p className='text-xs md:text-base font-medium text-center '>
+              {sk.title}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
