@@ -2,24 +2,24 @@
   "experienceData": [
     {
       "id": 1,
-      "img": "/dental.png",
-      "title": "Children's dental segmentation",
-      "tools": ["devicon:python", "material-icon-theme:pytorch", "devicon:anaconda", "simple-icons:yolo"],
-      "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
+      "img": "/Hackathon.png",
+      "title": "HACK ขยะหาดใหญ่ล้นเมือง",
+      "tools": [""],
+      "description": "ชุดหุ่นยนต์คัดแยกขยะอัจฉริยะต้นแบบเพื่อการศึกษา ขับเคลื่อนด้วยนโยบายแก้ปัญหาขยะล้นเมืองหาดใหญ่ ใช้ Image Processing แยกขยะ 4 ประเภท (ขยะติดเชื้อ, ขยะอินทรีย์, รีไซเคิล, E-waste) เพื่อปลูกฝังจิตสำนึกให้เยาวชน"
     },
     {
       "id": 2,
-      "img": "/before.jpg",
-      "title": "**************",
-      "tools": ["devicon:python", "devicon:opencv", "simple-icons:yolo"],
-      "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
+      "img": "/Tohseah.png",
+      "title": "Pilgrim mate",
+      "tools": [""],
+      "description": "แอปพลิเคชันที่เป็นตัวกลางสร้างมาตรฐานความปลอดภัยให้ผู้แสวงบุญ แก้ปัญหาการถูกลอยแพจากไกด์ (แซะ) ในการไปฮัจย์และอุมเราะห์ ช่วยคัดกรองคุณภาพและรับประกันความอุ่นใจตลอดการเดินทาง"
     },
     {
       "id": 3,
-      "img": "/crime.jpg",
-      "title": "Analysis of USA crime",
-      "tools": ["devicon:python", "devicon:numpy", "devicon:pandas"],
-      "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
+      "img": "/HeariUs.png",
+      "title": "AI Diagnose hearing loss",
+      "tools": [""],
+      "description": "ระบบ AI ช่วยทำนายภาวะบกพร่องทางการได้ยินในทารกแรกเกิด ช่วยลดระยะเวลาการวินิจฉัยของแพทย์ ทำให้เด็กได้รับการรักษาและพัฒนาการได้ทันท่วงที เพิ่มประสิทธิภาพการทำงานในโรงพยาบาล"
     }
   ],
 
@@ -88,17 +88,31 @@
   "projectData": [
     {
       "id":1,
-      "img":"/porsche-911.jpg",
-      "pjname":"Bitcoin predicetion",
-      "tools":["devicon:python","devicon:numpy","devicon:pandas"],
-      "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, expedita voluptates alias, incidunt perferendis eos facilis ducimus ea animi explicabo cupiditate voluptatum fuga distinctio repudiandae velit voluptas dolor vero! Vitae similique nostrum voluptatum commodi quidem! Quae, fugit? Repudiandae, blanditiis ab!"        
+      "img":"/dental.png",
+      "pjname":"Children's dental segmentation",
+      "tools":["devicon:python", "material-icon-theme:pytorch", "devicon:anaconda", "simple-icons:yolo"],
+      "description":"พัฒนาโมเดล AI ด้วยเทคนิค Masking เพื่อตรวจจับและระบุตำแหน่งฟันน้ำนมจากภาพ X-ray ช่วยเพิ่มความรวดเร็วและแม่นยำในการวินิจฉัยทางทันตกรรมสำหรับเด็ก"
     },
     {
       "id":2,
-      "img":"/unsplash.jpg",
-      "pjname":"Bitcoin predicetion",
+      "img":"/crime.jpg",
+      "pjname":"Analysis of USA crime",
       "tools":["devicon:python","devicon:numpy","devicon:pandas"],
-      "description":" เทนร AI2"     
+      "description":" วิเคราะห์ Dataset อาชญากรรมในสหรัฐอเมริกา เพื่อระบุพื้นที่เสี่ยง (Hotspots) และรูปแบบการเกิดเหตุในแต่ละรัฐ นำเสนอเป็นข้อมูลเชิงลึกเพื่อการเฝ้าระวังความปลอดภัย"     
+    },
+    {
+      "id":3,
+      "img":"/Financial.png",
+      "pjname":"Finanacial freedom",
+      "tools":["devicon:python","devicon:numpy","devicon:pandas", "skill-icons:scikitlearn-light"],
+      "description":" โมเดลทำนายราคา Bitcoin เพื่อวิเคราะห์แนวโน้มการลงทุน เปรียบเทียบประสิทธิภาพระหว่าง Linear Regression, Polynomial Regression และ Random Forest เพื่อหาค่าความแม่นยำสูงสุด"     
+    },
+    {
+      "id":4,
+      "img":"/House_prediction.png",
+      "pjname":"House prediction",
+      "tools":["devicon:python","devicon:numpy","skill-icons:scikitlearn-light"],
+      "description":" ระบบประเมินราคาบ้านโดยวิเคราะห์ปัจจัยทำเลที่ตั้ง (ระยะทางสู่เมือง, ทะเล, โรงพยาบาล) เปรียบเทียบโมเดล 5 ชนิด (Linear, Polynomial, Ridge, Lasso, SVR) เพื่อลดค่า Error ให้ต่ำที่สุด"     
     }
   ]
 }
