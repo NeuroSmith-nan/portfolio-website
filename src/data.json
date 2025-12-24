@@ -2,21 +2,21 @@
   "experienceData": [
     {
       "id": 1,
-      "img": "/public/Dental.png",
+      "img": "/public/dental.png",
       "title": "Children's dental segmentation",
       "tools": ["devicon:python", "material-icon-theme:pytorch", "devicon:anaconda", "simple-icons:yolo"],
       "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
     },
     {
       "id": 2,
-      "img": "/public/Before.jpg",
+      "img": "/public/before.jpg",
       "title": "**************",
       "tools": ["devicon:python", "devicon:opencv", "simple-icons:yolo"],
       "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
     },
     {
       "id": 3,
-      "img": "/public/Crime.jpg",
+      "img": "/public/crime.jpg",
       "title": "Analysis of USA crime",
       "tools": ["devicon:python", "devicon:numpy", "devicon:pandas"],
       "description": "พัฒนาระบบ Search Algorithm และทำงานกับทีม AI"
@@ -88,7 +88,7 @@
   "projectData": [
     {
       "id":1,
-      "img":"/public/Porsche-911.jpg",
+      "img":"/public/porsche-911.jpg",
       "pjname":"Bitcoin predicetion",
       "tools":["devicon:python","devicon:numpy","devicon:pandas"],
       "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, expedita voluptates alias, incidunt perferendis eos facilis ducimus ea animi explicabo cupiditate voluptatum fuga distinctio repudiandae velit voluptas dolor vero! Vitae similique nostrum voluptatum commodi quidem! Quae, fugit? Repudiandae, blanditiis ab!"        
