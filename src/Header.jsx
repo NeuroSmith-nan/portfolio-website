@@ -32,7 +32,7 @@ function Header({ theme }) {
 
           p-6 md:p-10         /* 4. ใช้ padding ที่ responsive (p-15 ไม่มีใน Tailwind) */
           
-          backdrop-blur-sm
+          backdrop-blur-[3px]
           transition-colors duration-300
         `}
       >

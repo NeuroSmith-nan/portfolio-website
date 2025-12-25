@@ -2,41 +2,38 @@
 @import "tailwindcss";
 
 .animated-circles-container {
-  /* ... (โค้ด container เหมือนเดิม) ... */
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
   overflow: hidden; pointer-events: none; z-index: 0;
+  /* เพิ่มตรงนี้เพื่อบังคับใช้ GPU layer แยกต่างหาก */
+  transform: translateZ(0); 
 }
+
 .animated-circles-svg { width: 100%; height: 100%; }
 
 .animated-circle {
   opacity: 0;
+  /* 1. ต้องกำหนด transform-origin ให้อยู่ตรงกลาง เพื่อให้ขยายจากตรงกลาง */
+  transform-origin: center;
+  /* 2. ใช้เส้นคงที่แทน (การ animate stroke-width กินแรง) */
+  stroke-width: 0.5px; 
   animation: expand-and-fade 6s ease-in-out infinite;
-
-  /* --- ❌ ลบสีเส้นออกจาก CSS --- */
-  /* stroke: theme(colors.slate.400); */ 
+  
+  /* เทคนิคเสริม: ถ้าอยากให้เส้นไม่ขยายขนาดตามวงกลม (optional) */
+  /* vector-effect: non-scaling-stroke; */
 }
-
-/* --- ❌ ลบ .dark selector ออก --- */
-/*
-.dark .animated-circle {
-  stroke: #E0E6F8;
-}
-*/
 
 @keyframes expand-and-fade {
-  /* ... (Keyframes เหมือนเดิม) ... */
   0% {
-    r: 0;
+    /* ใช้ scale แทน r */
+    transform: scale(0); 
     opacity: 0.5;
-    stroke-width: 0.5px;
   }
-  50% {
-    r: 50%;
-    opacity: 0.1;
-  }
+  
+  /* ช่วงกลางอาจจะไม่ต้องระบุ scale ถ้าใช้ ease-in-out */
+  
   100% {
-    r: 100%;
+    /* ขยายขนาดไปจนสุดจอ (คำนวณคร่าวๆ ว่า scale เท่าไหร่ถึงจะเต็มจอ) */
+    transform: scale(2); 
     opacity: 0;
-    stroke-width: 0.25px;
   }
 }
