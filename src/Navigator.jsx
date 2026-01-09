@@ -18,10 +18,10 @@ export default function Navigator({theme,setTheme}){
             <div className="nav-container w-full h-18 flex justify-between p-5 fixed z-50">
                 <div className=" media-link">
                     <ul className=" flex flex-row w-auto gap-3 items-center ">
-                        <li><a className=" p-0" href="https://www.threads.com/@hanant.16" target="blac_"><Icon icon="ph:threads-logo-fill" width="30"  /></a></li>
-                        <li><a className=" p-0" href="" target="blac_"><Icon icon="pajamas:linkedin" width="30" /></a></li>
+                        <li><a className=" p-0" href="https://medium.com/@hanant.freelance.22" target="blac_"><Icon icon="ri:medium-fill" width="30" /></a></li>
+                        <li><a className=" p-0" href="https://www.linkedin.com/in/abdulhanant-radaeng-4b793b332/" target="blac_"><Icon icon="pajamas:linkedin" width="26" /></a></li>
                         <li><a className=" p-0" href="https://github.com/NeuroSmith-nan?tab=repositories" target="blac_"><Icon icon="ri:github-fill" width="30" /></a></li>
-                        <li><a className=" p-0" href="" target="blac_"><Icon icon="fa7-brands:kaggle" width="30" /></a></li>
+                        <li><a className=" p-0" href="https://www.kaggle.com/houlo7" target="blac_"><Icon icon="fa7-brands:kaggle" width="30" /></a></li>
                     </ul>
                 </div>
 

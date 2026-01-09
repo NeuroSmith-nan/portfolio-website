@@ -10,7 +10,7 @@ import Footer from './Footer'
 import portfolioData from './data.json';
 
 
-function App() {
+export default function App() {
   const [theme,setTheme] = useState(localStorage.getItem('mode') || 'light')
 
   // useEffect ของคุณดีอยู่แล้ว (ไม่ต้องแก้ ถ้าจะใช้กับ <html>)
@@ -46,4 +46,3 @@ function App() {
   )
 }
 
-export default App

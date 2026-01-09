@@ -53,7 +53,7 @@ export default function About() {
                         I’m truly grateful to be walking this path in technology — one that challenges me, inspires me, and helps me grow every day. 🌱
                     </p>
                     <div id="About" className="flex w-full py-2 md:py-4 items-center justify-center">
-                        <a href="/resume_Hanant.pdf" download className="btn text-base md:text-lg lg:text-xl border rounded-2xl hover:text-orange-700 p-3 md:p-5 lg:p-6 ">
+                        <a href="/public/Hanant_Resume .pdf" download className="btn text-base md:text-lg lg:text-xl border rounded-2xl hover:text-orange-700 p-3 md:p-5 lg:p-6 ">
                             Download Resume<span className=' text-red-600'>!</span>
                         </a>    
                     </div>           
