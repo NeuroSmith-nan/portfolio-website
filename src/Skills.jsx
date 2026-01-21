@@ -16,24 +16,20 @@ export default function Skills({ skillsData }) {
       <div className="w-full max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 justify-items-center">
         {skillsData.map((sk, index) => (
           <div 
-            key={index} // อย่าลืมใส่ key
+            key={index}
             className='group flex flex-col justify-center items-center p-2 transition-transform duration-300 hover:scale-110'
           >
             {/* Icon Section */}
-            <div className='mb-3'>
-               {/* กำหนดขนาดที่นี่:
-                 - w-10 h-10 (40px) สำหรับมือถือ (ไม่เล็กไม่ใหญ่ไป)
-                 - md:w-16 md:h-16 (64px) สำหรับ iPad/PC 
-               */}
+            <div className='mb-3'> 
                <Icon 
-                 icon={sk.skill} 
+                 icon={sk.icon || sk.skill} 
                  className="w-10 h-10 md:w-16 md:h-16  " 
                />
             </div>
             
             {/* Text Section */}
             <p className='text-xs md:text-base font-medium text-center '>
-              {sk.title}
+              {sk.name || sk.title}
             </p>
           </div>
         ))}

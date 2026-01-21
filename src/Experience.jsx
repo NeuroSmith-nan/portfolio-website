@@ -25,12 +25,12 @@ export default function Experience({experiencesData}){
                     flex flex-col shrink-0 snap-start 
                     w-[90%] sm:w-[80%] md:w-[60%] lg:w-auto
                     rounded-lg shadow-lg shadow-gray-900 overflow-hidden bg-gray-700">
-                    <img className='w-full h-56 object-cover' src={exp.img} alt={exp.title} />
+                    <img className='w-full h-56 object-cover' src={exp.image || exp.img} alt={exp.title} />
                     
                     <div className="p-6 flex flex-col grow items-center text-center">
                         <h1 className='text-2xl font-semibold mb-3 text-white'>{exp.title}</h1>
                         <div className='flex gap-3 items-center mb-4 '>
-                        {exp.tools.map(toolName => (
+                        {(exp.tools || []).map(toolName => (
                             <ul className=' text-white' key={toolName} >
                                 <li><Icon icon={toolName} width={25}/></li>
                             </ul>
@@ -40,7 +40,7 @@ export default function Experience({experiencesData}){
                         <p className=" text-white text-sm h-24 overflow-y-auto">
                             {exp.description}
                         </p>
-                    </div>
+                    </div> 
                 </div>
                 ))}
             </div>
